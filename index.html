@@ -1,0 +1,81 @@
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <title>DENIZ PWA</title>
+</head>
+
+<body>
+  <form>
+    <div>
+      <label>Beschreibung</label>
+      <input type="text" id="Beschreibung" placeholder="Beschreibung...">
+    </div>
+    <div>
+      <label>Datums</label>
+      <input type="date"id="Datum"  placeholder="Datum...">
+    </div>
+    <div>
+      <label>Kategorie</label>
+      <input type="text" id="Kategorie"  placeholder="Kategorie...">
+    </div>
+    <div>
+      <label>Wert</label>
+      <input type="number" id="Wert"  placeholder="Wert...">
+    </div>
+
+    <input id="clickMe" type="button" value="Speichern" onclick="safe();reload();" />
+    <input id="clickMe" type="button" value="Laden" onclick="ausgeben();" />
+  
+  <!--  <button type="submit" onclick="safe();" >Speichern</button> -->
+  </form>
+  <div id="ausgabe"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+<!--
+<form>
+  <div>
+    <label>Beschreibung</label>
+    <input type="text" id="b.text" value=" ">
+  </div>
+  <div>
+    <label>Datums</label>
+    <input type="text" id="d.text" value=" ">
+  </div>
+  <div>
+    <label>Kategorie</label>
+    <input type="text" id="k.text" value=" ">
+  </div>
+  <div>
+    <label>Wert</label>
+    <input type="text" id="w.text" value=" ">
+  </div>
+  <div>
+    <label>Balance</label>
+    <input type="text" id="ba.text" value=" ">
+  </div>
+</form>
+
+<script>   
+  var beschreibung = localStorage.getItem("beschreibung");
+  document.getElementById('b.text').value =  beschreibung;
+
+  var datum = localStorage.getItem("datum");
+  document.getElementById('d.text').value =  datum;
+
+  var kategorie = localStorage.getItem("kategorie");
+  document.getElementById('k.text').value =  kategorie;
+
+  var wert = localStorage.getItem("wert");
+  document.getElementById('w.text').value =  wert;
+
+  document.getElementById('ba.text').value =  parseInt(wert) + parseInt(wert);
+ 
+  </script>
+-->
